@@ -1,6 +1,6 @@
 angular.module('quoteBook').controller('mainCtrl', function($scope, dataService) {
 	
-	$scope.textInput = "mfjftjyjvy";
+	$scope.textInput = "";
 	
 	
 	$scope.test = "Hello";
@@ -11,12 +11,14 @@ angular.module('quoteBook').controller('mainCtrl', function($scope, dataService)
 			text: $scope.textInput,
 			author: $scope.authorInput
 		};
-		
 		dataService.addQuote(quote);
-		
 	};
 	
 	$scope.quoteRemove = function (quote) {
 		dataService.quoteRemove(quote);
 	};
+	
+	// $scope.quotefilter = function () {
+		
+	// };
 });

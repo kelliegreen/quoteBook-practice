@@ -15,7 +15,9 @@
 	Author
 	<input ng-model="authorInput"></input>
 	<button ng-click="addQuote()">Add Quote</button>
-	<div ng-repeat="quote in quotes" class="quote">
+	<input ng-model="quotefilter"></input>
+	<button ng-click="quotefilter()">Filter</button>
+	<div ng-repeat="quote in quotes | filter: quotefilter" class="quote">
 		<button ng-click="quoteRemove(quote)">Delete</button>
 		<h1>{{ quote.text }}</h1>
 		<h3>{{ quote.author}}</h3>

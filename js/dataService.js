@@ -20,24 +20,30 @@ angular.module('quoteBook').service('dataService', function () {
       }
     }
   };
+
+  // this.quotefilter = function () {
+  //   for (var i = 0; i < this.quotes.length; i++) {
+  //     if(this.quotes[i].text === quotefilter.text) {
+  //      return this.quotes[i]; 
+  //     }
+  //   };
   
   
   
   
   
-  
-  // this.getData = function() {
-  //   return quotes;
-  // };
-  // 
-  // this.addData = function(text, author) {
-  //   quotes.append();
-  // };
-  // 
-  // this.removeData = function(x) {
-  //   var takeOut = x;
-  //   for(var i = 0; i < quotes.length; i++);
-  // };	if((i) === takeOut) {
-  //   delete quotes[i];
-  // };
-});
+    // this.getData = function() {
+    //   return quotes;
+    // };
+    // 
+    // this.addData = function(text, author) {
+    //   quotes.append();
+    // };
+    // 
+    // this.removeData = function(x) {
+    //   var takeOut = x;
+    //   for(var i = 0; i < quotes.length; i++);
+    // };	if((i) === takeOut) {
+    //   delete quotes[i];
+    // };
+  });
